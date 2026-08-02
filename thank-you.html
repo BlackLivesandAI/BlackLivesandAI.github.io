@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submission Received — Black Lives and AI</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0b0d17;
+    background-image:
+      radial-gradient(ellipse at 15% -10%, rgba(124,92,255,0.28) 0%, transparent 45%),
+      radial-gradient(ellipse at 90% 5%, rgba(34,211,238,0.20) 0%, transparent 40%),
+      radial-gradient(ellipse at 50% 100%, rgba(124,92,255,0.12) 0%, transparent 50%);
+    background-attachment: fixed;
+    color: #eef0ff;
+    font-family: 'Sora', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-overlay {
+    position: fixed; inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+  .card {
+    position: relative; z-index: 1;
+    max-width: 560px; width: 100%; margin: 24px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px; padding: 48px 40px;
+    box-shadow: 0 0 60px rgba(124,92,255,0.12);
+    text-align: center;
+  }
+  .check {
+    width: 56px; height: 56px; margin: 0 auto 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #7c5cff, #22d3ee);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 30px rgba(124,92,255,0.4);
+  }
+  .check svg { width: 26px; height: 26px; }
+  h1 {
+    font-size: 26px; font-weight: 800; margin-bottom: 16px;
+    background: linear-gradient(100deg, #ffffff 20%, #b3bfff 60%, #7ee8fa 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  p { color: #b7bce0; font-size: 15px; line-height: 1.7; margin-bottom: 14px; }
+  p:last-of-type { margin-bottom: 32px; }
+  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600; font-size: 14px;
+    padding: 12px 22px; border-radius: 10px;
+  }
+  .btn-primary {
+    background: linear-gradient(90deg, #7c5cff, #22d3ee); color: #0b0d17;
+    box-shadow: 0 4px 24px rgba(124,92,255,0.35);
+  }
+  .btn-secondary {
+    background: rgba(255,255,255,0.06); color: #eef0ff; border: 1px solid rgba(255,255,255,0.14);
+  }
+</style>
+</head>
+<body>
+<div class="grid-overlay"></div>
+<div class="card">
+  <div class="check">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 13l4 4L19 7" stroke="#0b0d17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <h1>Thank you for your submission.</h1>
+  <p>Your proposal has been received and will be reviewed by the editorial team. Notifications of acceptance will be sent soon.</p>
+  <p>In the meantime, follow the progress of the volume or contact the editors with any questions.</p>
+  <div class="links">
+    <a href="/" class="btn btn-primary">Back to the collection</a>
+    <a href="mailto:RandonTaylor14@gmail.com" class="btn btn-secondary">Contact the editors</a>
+  </div>
+</div>
+</body>
+</html>
