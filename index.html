@@ -82,6 +82,26 @@
     background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.09); color: #d7dbff;
   }
 
+  /* Editors */
+  .editors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .editor-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 14px; padding: 24px;
+  }
+  .editor-name { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+  .editor-role { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #8f9bfa; margin-bottom: 14px; }
+  .editor-card p.body-text { font-size: 14px; color: #b7bce0; margin-bottom: 18px; }
+  .editor-card p.body-text em { color: #d7dbff; font-style: normal; font-weight: 600; }
+  .editor-links { display: flex; gap: 14px; flex-wrap: wrap; }
+  .editor-links a {
+    font-size: 13px; font-weight: 600; color: #7ee8fa; text-decoration: none;
+    border-bottom: 1px solid rgba(126,232,250,0.3); padding-bottom: 2px;
+  }
+  .editor-links a:hover { border-color: #7ee8fa; }
+  @media (max-width: 640px) {
+    .editors-grid { grid-template-columns: 1fr; }
+  }
+
   /* CTA / submission */
   .glass {
     background: rgba(255,255,255,0.05);
@@ -137,8 +157,8 @@
 
   <section>
     <h2>About the collection</h2>
-    <p class="body-text">This collection takes up a deceptively simple question with vast implications: what does it mean for a people to encounter a technology that was never built with them centrally in mind, and to answer on their own terms? Centered on the United States, it gathers scholars examining how AI-related technologies both shape and are shaped by Black communities — not as a footnote to the field, but as a site where the field's most urgent questions are already being tested.</p>
-    <p class="body-text">The volume pushes past description toward theory: developing frameworks for sector-specific reckonings in medicine and health, labor, surveillance, and education, while engaging live scholarly debates over community-centered and democratized AI, AI governance, and AI safety. Put simply, this is a collection about more than how AI-related technology touches Black life — it is about the terms of relation itself: how Black communities choose to engage these technologies, redirect them, or refuse them altogether.</p>
+    <p class="body-text">Focusing on the United States, this collection brings together scholars examining how AI-related technologies shape, and are shaped by, Black communities. Rather than positioning Black life at the margins of AI scholarship, the volume argues that Black experiences reveal some of the most pressing social, political, and ethical questions confronting artificial intelligence today.</p>
+    <p class="body-text">The collection pushes the field forward by developing new theoretical frameworks, examining sector-specific issues across medicine and health, labor, surveillance, education, and other domains, and engaging contemporary debates surrounding community-centered and democratized AI, AI governance, AI ethics, and AI safety. At its core, this volume is concerned not simply with how AI-related technologies affect Black lives, but with the broader question of relationship itself: how Black communities choose to engage these technologies, reshape them in service of collective flourishing, or refuse them when they reproduce exclusion, domination, or harm.</p>
     <div class="highlight-box">
       <div class="label">We are especially keen to receive submissions on</div>
       <ul>
@@ -169,6 +189,29 @@
       <div class="chip">AI democratization</div>
       <div class="chip">Community-centered AI</div>
       <div class="chip">Data sovereignty</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About the editors</h2>
+    <div class="editors-grid">
+      <div class="editor-card">
+        <div class="editor-name">Dr. Randon R. Taylor</div>
+        <div class="editor-role">Editor</div>
+        <p class="body-text">An internationally recognized sociologist who studies the social impact of AI and emerging technologies. He is an expert in democratizing AI and community-centric approaches, and regularly publishes research in leading AI journals such as <em>AI & Society</em>, <em>AI and Ethics</em>, and <em>Philosophy and Technology</em>. His current research explores community-based approaches to AI governance across the AI lifecycle, safety, and ethics.</p>
+        <div class="editor-links">
+          <a href="https://www.linkedin.com/in/randon-r-taylor-3a1985240/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://link.springer.com/article/10.1007/s13347-026-01116-2" target="_blank" rel="noopener">Latest publication</a>
+        </div>
+      </div>
+      <div class="editor-card">
+        <div class="editor-name">Krystal Jackson, M.S.</div>
+        <div class="editor-role">Editor</div>
+        <p class="body-text">Director for AI Security at the Institute for Security and Technology, where she studies the global security implications of artificial intelligence. Her work bridges AI, ethics, and public policy, with a focus on transforming abstract risk concerns into forecastable, governable quantities. Her prior experience includes roles with the Cybersecurity and Infrastructure Security Agency, the Center for Security and Emerging Technology, and the Center for Long-Term Cybersecurity. She holds an M.S. in Information Security, Policy and Management from Carnegie Mellon University.</p>
+        <div class="editor-links">
+          <a href="https://www.linkedin.com/in/krystal-a-jackson/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </section>
 
