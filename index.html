@@ -93,6 +93,54 @@
   .domain-title { font-size: 16px; font-weight: 700; color: #fff; }
   .domain-sub { font-size: 13px; color: #9ba3c9; line-height: 1.5; margin: -10px 0 18px 0; }
 
+  /* Timeline */
+  .timeline {
+    display: flex;
+    position: relative;
+    margin-top: 32px;
+    padding-top: 6px;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7c5cff, #22d3ee);
+    opacity: 0.5;
+  }
+  .node {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    padding: 0 4px;
+  }
+  .node-circle {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: linear-gradient(135deg, #7c5cff, #22d3ee);
+    margin: 0 auto 14px;
+    position: relative; z-index: 1;
+    box-shadow: 0 0 14px rgba(124,92,255,0.6);
+  }
+  .node-final { width: 18px; height: 18px; box-shadow: 0 0 20px rgba(34,211,238,0.7); }
+  .node-date { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .node-label { font-size: 12px; color: #9ba3c9; line-height: 1.4; }
+
+  @media (max-width: 700px) {
+    .timeline { flex-direction: column; padding-top: 0; }
+    .timeline::before {
+      top: 0; bottom: 0; left: 6px; right: auto; width: 2px; height: auto;
+      background: linear-gradient(180deg, #7c5cff, #22d3ee);
+    }
+    .node {
+      display: flex; align-items: flex-start; gap: 14px;
+      text-align: left; padding: 0 0 26px 0;
+    }
+    .node:last-child { padding-bottom: 0; }
+    .node-circle { margin: 3px 0 0 0; flex-shrink: 0; }
+  }
+
   /* Editors */
   .editors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .editor-card {
@@ -222,7 +270,7 @@
     </div>
   </section>
 
-   <section>
+  <section>
     <h2>Timeline</h2>
     <div class="timeline">
       <div class="node">
@@ -232,7 +280,7 @@
       </div>
       <div class="node">
         <div class="node-circle"></div>
-        <div class="node-date"> On or Before Sept 15, 2026</div>
+        <div class="node-date">On or before Sept 15, 2026</div>
         <div class="node-label">Notification of acceptance</div>
       </div>
       <div class="node">
@@ -258,7 +306,7 @@
     </div>
   </section>
 
-  <section>
+     <section>
     <h2>About the editors</h2>
     <div class="editors-grid">
       <div class="editor-card">
